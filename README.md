@@ -4,4 +4,4 @@
 - SQL 고득점 Kit 전체 문제 풀이
 
 ## [백준](https://www.acmicpc.net/)
-- 알고리즘 대비 [인기 문제집](https://www.acmicpc.net/workbook/view/8708)
+- 알고리즘 대비 [IT기업 및 대기업 계열사 문제집](https://www.acmicpc.net/workbook/view/8708)
