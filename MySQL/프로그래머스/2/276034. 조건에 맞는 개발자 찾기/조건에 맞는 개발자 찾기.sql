@@ -1,5 +1,6 @@
 # 비트 연산(&) + join
-
+# 오답노트 : python과 C# 모두 가지고 있는 개발자의 정보가 2번 출력되지 않도록 해야 한다.
+    
 # SELECT * FROM SKILLCODES -- 개발자가 사용하는 프로그래밍 언어 정보
 # SELECT * FROM DEVELOPERS -- 개발자들의 프로그래밍 스킬 정보
 
