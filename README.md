@@ -8,6 +8,10 @@
 - 알고리즘 [SSAFY 삼성 IM, A형 대비 문제집](https://www.acmicpc.net/group/workbook/22701/1)
 
 ## SSAFY 대비
+- 오버플로우 (int, long) 조심
+- 문제 잘 읽고 이해한 다음 구현 (조건)
+- 최솟값, 0, 최댓값 테스트 케이스 만들어서 검증하기
+- N 범위 확인하기
 ### [백준]
 1. ⭐10158 개미
 2. ⭐2477 참외밭
@@ -32,6 +36,8 @@
 
 ### [SWEA]
 1. ⭐[1859 백만 장자 프로젝트](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc)
+
+
 
 - 정렬
 - 구현
