@@ -7,7 +7,8 @@
 - 알고리즘 [IT기업 및 대기업 계열사 문제집](https://www.acmicpc.net/workbook/view/8708)
 - 알고리즘 [SSAFY 삼성 IM, A형 대비 문제집](https://www.acmicpc.net/group/workbook/22701/1)
 
-## SSAFY
+## SSAFY 대비
+### [백준]
 1. ⭐10158 개미
 2. ⭐2477 참외밭
 3. ⭐2628 종이자르기
@@ -28,6 +29,9 @@
 18. ~~2564 경비원~~
 19. ⭐2527 직사각형
 20. ~~10163 색종이~~
+
+### [SWEA]
+1. ⭐[1859 백만 장자 프로젝트](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc)
 
 - 정렬
 - 구현
