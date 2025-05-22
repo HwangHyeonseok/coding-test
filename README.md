@@ -45,6 +45,7 @@
 |-------|-------|-------|
 | [프로그래머스_신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410?language=java) | String 관련 메서드와 StringBuilder 메서드 활용 연습 | ⭐ |
 | [프로그래머스_문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057?language=java?language=java) | ArrayList를 활용한 문자열 분할 테크닉 | ⭐ |
+| [프로그래머스_인접 불가](https://hyeonstone.tistory.com/entry/SSAFY-12%EA%B8%B0-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-%ED%9B%84%EA%B8%B0) | 연속되는 문자 카운팅 |  |
 
 ### [스택/큐/덱]
 | 문제 | 학습 내용 | 오답 체크 |
