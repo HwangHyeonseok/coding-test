@@ -39,10 +39,14 @@
 1. ⭐[1859 백만 장자 프로젝트](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc)
 
 ### [문자열]
-| 문제 | 학습 내용 |
-|-------|-------|
-| [프로그래머스_문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057?language=java?language=java) | ArrayList를 활용한 문자열 분할 테크닉 |
+| 문제 | 학습 내용 | 오답 체크 |
+|-------|-------|-------|
+| [프로그래머스_문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057?language=java?language=java) | ArrayList를 활용한 문자열 분할 테크닉 | ⭐ |
 
+### [스택/큐/덱]
+| 문제 | 학습 내용 | 오답 체크 |
+|-------|-------|-------|
+| [LeetCode_Vaild Parentheses](https://leetcode.com/problems/valid-parentheses/) | 스택 순서쌍 기초문제 | |
 
 - 정렬
 - 구현
