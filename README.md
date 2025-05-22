@@ -50,8 +50,9 @@
 | [LeetCode_Vaild Parentheses](https://leetcode.com/problems/valid-parentheses/) | 스택 - 순서쌍 기초문제 | |
 | [LeetCode_Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 스택 - Monotonic Stack | |
 | [프로그래머스_주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=java) | 스택 - Monotonic Stack | |
+| [프로그래머스_기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) | 스택 - Monotonic Stack 응용 | ⭐ |
 
-💡[Monotonic Stack 개념](https://hyeonstone.tistory.com/entry/Stack-%EC%9D%91%EC%9A%A9-Monotonic-Stack)
+💡[Monotonic Stack 개념](https://hyeonstone.tistory.com/entry/Stack-%EC%9D%91%EC%9A%A9-Monotonic-Stack) -> {5, 10, 9, 8, 12, 4} 가 있다면 [1] 인덱스를 기점으로 [1] 인덱스부터 처음으로 커지는 지점을 알고 싶을 때 활용
 
 - 정렬
 - 구현
