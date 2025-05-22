@@ -49,6 +49,7 @@
 |-------|-------|-------|
 | [LeetCode_Vaild Parentheses](https://leetcode.com/problems/valid-parentheses/) | 스택 - 순서쌍 기초문제 | |
 | [LeetCode_Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 스택 - Monotonic Stack | |
+| [프로그래머스_주식가격](https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=java) | 스택 - Monotonic Stack | |
 
 💡[Monotonic Stack 개념](https://hyeonstone.tistory.com/entry/Stack-%EC%9D%91%EC%9A%A9-Monotonic-Stack)
 
