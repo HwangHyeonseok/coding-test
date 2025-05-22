@@ -46,7 +46,10 @@
 ### [스택/큐/덱]
 | 문제 | 학습 내용 | 오답 체크 |
 |-------|-------|-------|
-| [LeetCode_Vaild Parentheses](https://leetcode.com/problems/valid-parentheses/) | 스택 순서쌍 기초문제 | |
+| [LeetCode_Vaild Parentheses](https://leetcode.com/problems/valid-parentheses/) | 스택 - 순서쌍 기초문제 | |
+| [LeetCode_Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 스택 - Monotonic Stack | |
+
+💡[Monotonic Stack 개념](https://hyeonstone.tistory.com/entry/Stack-%EC%9D%91%EC%9A%A9-Monotonic-Stack)
 
 - 정렬
 - 구현
