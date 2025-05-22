@@ -3,6 +3,8 @@ import java.util.*;
 class Solution {
     public ArrayList<Integer> solution(int[] progresses, int[] speeds) {
         ArrayList<Integer> answer = new ArrayList<>();
+        Deque<Integer> s = new ArrayDeque<>();
+        
         // [93, 30, 55] [1, 30, 5] -> [7, 3, 9] // 걸리는 일 수 저장
         int[] days = new int[progresses.length];
         for(int i=0; i<days.length; i++) {
@@ -17,29 +19,29 @@ class Solution {
         //     System.out.println(days[i]);
         // }
         
-        for(int i=0; i<days.length; i+=0) {
-            int minus = days[i];
-            for(int j=i; j<days.length; j++) {
-                days[j] -= minus; 
-            }
-            
-            // Test
-            // for(int k=0; k<days.length; k++) {
-            //     System.out.print(days[k]+ " ");
-            // }
-            // System.out.println();
-            
-            // 진도율이 100% (남은 days[j]가 0이하) 인 것들에 한해 작업 수행
-            int combo = 0;
-            while(days[i] <= 0) {
+        // Monotonic Stack 활용
+        int combo = 0;
+        for(int i=0; i<days.length; i++) {
+            while(!s.isEmpty() && days[s.peek()] < days[i]) {
                 combo++;
-                i++;
-                if(i == days.length) break;
+                s.pop();
             }
             
-            // System.out.println(combo);
-            answer.add(combo);
+            if(s.isEmpty() && i != 0) {
+                answer.add(combo);
+                combo = 0;
+            }
+            
+            s.push(i);
         }
+        
+        // 마무리 처리
+        while(!s.isEmpty()) {
+            combo++;
+            s.pop();
+        }
+        answer.add(combo);
+        
         
         return answer;
     }
