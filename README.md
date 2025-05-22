@@ -41,6 +41,7 @@
 ### [문자열]
 | 문제 | 학습 내용 | 오답 체크 |
 |-------|-------|-------|
+| [프로그래머스_신규 아이디 추천](https://school.programmers.co.kr/learn/courses/30/lessons/72410?language=java) | String 관련 메서드와 StringBuilder 메서드 활용 연습 | ⭐ |
 | [프로그래머스_문자열 압축](https://school.programmers.co.kr/learn/courses/30/lessons/60057?language=java?language=java) | ArrayList를 활용한 문자열 분할 테크닉 | ⭐ |
 
 ### [스택/큐/덱]
