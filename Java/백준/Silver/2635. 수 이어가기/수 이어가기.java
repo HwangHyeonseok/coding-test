@@ -2,36 +2,41 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-	static ArrayList<Integer> maxSizeList = new ArrayList<>();
-	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		// input //
+		int N = Integer.parseInt(br.readLine()); // 첫 번째 수 선택
 		
-		int N = Integer.parseInt(br.readLine()); // 1번째 수를 고른다.
-		
-		for(int i=1; i<=N; i++) { // 2번째 수를 고른다.
-			ArrayList<Integer> tempList = new ArrayList<>(); // 임시 리스트
-			tempList.add(N); // 1~2번째 고른 수는 고정적으로 넣어준다.
-			tempList.add(i);
-	
-			// 이후 3번째부터 넣어준다.
-			int j = 2;
-			while(tempList.get(j-2)- tempList.get(j-1) >= 0) {
-				tempList.add(tempList.get(j-2)- tempList.get(j-1));
-				j++;
-			}
+		// logic // 
+		int maxCombo = 2;
+		ArrayList<Integer> ans = new ArrayList<>(); // 최대 개수를 가지는 숫자 리스트
+		for(int i=1; i<=N; i++) { // 두 번째 수 선택
+			// init
+			ArrayList<Integer> numList = new ArrayList<>();
+			numList.add(N);
+			numList.add(i);
 			
-			// 만약 길이가 최대 길이면 maxSizeList로 옮긴다.
-			if(tempList.size() > maxSizeList.size()) {
-				maxSizeList = new ArrayList<>(tempList);
+			// 세 번째 수부터 계속해서 음수가 나올 때까지 연산 진행
+			while(true) {
+				// 다음 수가 음수라면
+				if(numList.get(numList.size()-2) - numList.get(numList.size()-1) < 0) {
+					if(maxCombo < numList.size()) { // 만약 최대 개수인 경우
+						maxCombo = numList.size();
+						ans = new ArrayList<>(numList);
+					}
+					break;
+				}
+				else {
+					numList.add(numList.get(numList.size()-2) - numList.get(numList.size()-1));
+				}
 			}
 		}
 		
-		// output //
-		bw.write(String.format("%d\n",maxSizeList.size()));
-		for(int num : maxSizeList) {
-			bw.write(num + " ");
+		bw.write(maxCombo+"\n");
+		// ans 출력
+		for(int i : ans) {
+			bw.write(i+" ");
 		}
 		bw.flush();
 		bw.close();
