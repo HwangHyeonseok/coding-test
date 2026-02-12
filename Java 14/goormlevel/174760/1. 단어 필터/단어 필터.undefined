@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String SElen = br.readLine();
+		StringTokenizer st = new StringTokenizer(SElen, " ");
+		int Slen = Integer.parseInt(st.nextToken()); // 단어 S의 길이
+		int Elen = Integer.parseInt(st.nextToken()); // 메시지 E의 길이
+		String S = br.readLine();
+		String E = br.readLine(); 
+
+		// 메시지 E에서 단어 S를 걸러내는 단어 필터 	
+		for(int i=0; i<Elen; i++) {
+			E = E.replace(S, "");
+		}
+
+		// 메시지의 내용이 없는 경우 EMPTY 출력
+		if(E.length() == 0) E = "EMPTY";
+		System.out.println(E);
+	}
+}
