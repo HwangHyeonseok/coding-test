@@ -30,6 +30,6 @@ class Main {
 		// 마무리 처리 (마지막이 단어인 경우)
 		if(isContinueWord == 1) wordCnt++;
 		
-		System.out.print(wordCnt);
+		System.out.println(wordCnt);
 	}
 }
