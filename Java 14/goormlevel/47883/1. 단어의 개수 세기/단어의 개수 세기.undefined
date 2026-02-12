@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+// 단어에는 공백 X
+// 서로 다른 단어 사이에는 반드시 하나 이상의 공백 존재
+// 같은 단어가 나오더라도 세주어야 함.
+
+class Main {
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String input = br.readLine();
+		
+		int wordCnt = 0; // 단어 개수(정답)
+		int isContinueWord = 0; // 연속된 단어 : 1 / 단어가 끊어지면 : 0
+		for(int i=0; i<input.length(); i++) {
+			// 알파벳인 경우
+			if((input.charAt(i) >= 'A' && input.charAt(i) <= 'Z') ||
+				(input.charAt(i) >= 'a' && input.charAt(i) <= 'z'))
+			{
+				isContinueWord = 1;
+			}
+				// 빈칸인 경우
+			else {
+				if(isContinueWord == 1) wordCnt++;
+				isContinueWord = 0;
+			}
+		}
+
+		// 마무리 처리 (마지막이 단어인 경우)
+		if(isContinueWord == 1) wordCnt++;
+		
+		System.out.print(wordCnt);
+	}
+}
