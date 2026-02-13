@@ -7,6 +7,15 @@
 - 알고리즘 [IT기업 및 대기업 계열사 문제집](https://www.acmicpc.net/workbook/view/8708)
 - 알고리즘 [SSAFY 삼성 IM, A형 대비 문제집](https://www.acmicpc.net/group/workbook/22701/1)
 
+## 금융권, 금융SI
+[알고리즘]
+- 문자열
+- 자료형(오버플로우)를 조심해야 하는 구현 문제
+
+[SQL]
+- GROUP BY
+- JOIN, SUBQUERY 이용
+
 ## SSAFY
 ### 코딩테스트 풀이 checklist
 - 문제 잘 읽고 이해한 다음 구현 (조건)
